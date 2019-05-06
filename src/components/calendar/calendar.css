@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'Montserrat_Bold';
+    src: url(./fonts/Montserrat_Bold.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Montserrat_Regular';
+    src: url(./fonts/Montserrat_Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+.tail-datetime-calendar {
+  width: 270px;
+  margin: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3125);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3125);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.tail-datetime-calendar:after {
+  clear: both;
+  content: "";
+  display: block;
+  font-size: 0;
+  visibility: hidden;
+}
+
+.tail-datetime-calendar .calendar-navi {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: table;
+  border-spacing: 0;
+  background-color: #0B3157;
+  border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+}
+.tail-datetime-calendar .calendar-navi span {
+  cursor: pointer;
+  color: #fff;
+  font-weight:bold;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tail-datetime-calendar .calendar-navi .back img{
+    width: 20px;
+}
+
+.tail-datetime-calendar .calendar-navi .add img{
+    width: 20px;
+}
+
+.days-container {
+    height: 190px;
+}
+
+.days-container .week {
+    background-color: #FFFF;
+    font-size: 10pt;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    height: 15px;
+    justify-content:space-around;
+    
+}
+
+
+
+.tail-datetime-calendar .day-events{
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 100%;
+    height: 300px;
+    background-color: #FFFF;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+
+.event-container{
+     width: 100%;
+     text-align: center;
+     display: flex;
+     font-size: 10pt;
+}
+.event-container:hover {
+        cursor: pointer;
+      }
+
+.animated-time {
+width: 30%;
+}
+    
+.event-time {
+width: 100%;
+}
+.animated-title {
+width: 70%;
+}
+
+.event-title {
+width: 70%;
+}
+
+.event-attribute {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+box-sizing: border-box;
+padding: 5px;
+}
+
+.tail-datetime-calendar .calendar-navi span.button-prev {
+     font-size: 8.5pt;
+     font-family: 'Montserrat_Bold';
+     color: #48C1C2;
+     text-transform: uppercase;
+     padding: 0;
+     padding-left: 5px;
+}
+.tail-datetime-calendar .calendar-navi span.button-next {
+     font-size: 8.5pt;
+     font-family: 'Montserrat_Bold';
+     color: #48C1C2;
+     text-transform: uppercase;
+     padding: 0;
+     padding-right: 5px;
+}
+
+.freeday.day .day-number {
+    color: mediumturquoise;
+}
+
+.freeday.day.has-events .day-number{
+  color: mediumturquoise;
+}
+.freeday{
+    font-family: 'Montserrat_Regular';
+    font-weight: 600;
+    color: mediumturquoise;
+}
+
+
+span.now_time {
+     color: #ffff;
+     font-size: 12pt;
+     font-family: 'Montserrat_Bold';
+     background-color: #0B3157;   
+     padding-right: 300px;
+     padding-top: 10px;
+     padding-left: 6px;
+     padding-bottom: 10px;
+}
+
+.now_time
+.tail-datetime-calendar .calendar-navi span.button-check {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
+    9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkP\
+    SJNMTIgNWwtOCA4LTQtNCAxLjUtMS41TDQgMTBsNi41LTYuNUwxMiA1eiIvPjwvc3ZnPg==");
+}
+.tail-datetime-calendar .calendar-navi span.button-close {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
+    9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkP\
+    SJNNy40OCA4bDMuNzUgMy43NS0xLjQ4IDEuNDhMNiA5LjQ4bC0zLjc1IDMuNzUtMS40OC0xLjQ4TDQuNTIgOCAuNzcgNC4y\
+    NWwxLjQ4LTEuNDhMNiA2LjUybDMuNzUtMy43NSAxLjQ4IDEuNDhMNy40OCA4eiIvPjwvc3ZnPg==");
+}
+
+
+.row{
+      margin-left: 0.3px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+     
+}
+ .days-header {
+      font-family: 'Montserrat_Regular';
+      color: #FFFFFF;
+      width: 100%;
+      height: 10pt;
+      background-color: #0B3157;
+      font-size: 7pt;
+    
+}
+
+
+.day .day-number {
+    border: 1px;
+    cursor: pointer;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    font-family: 'Montserrat_Regular';
+    font-weight: 600;
+    color:  #0B3157;
+}
+
+.box {
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.day.has-events.today .day-number{
+      cursor: pointer;
+      padding-left: 2px;
+      padding-right: 2px;
+      justify-content: center;
+      font-family: 'Montserrat_Regular';
+      color:#F06543;
+      text-align: center;
+  }
+  
+.day.has-events .day-number{
+    cursor: pointer;
+    justify-content: center;
+    color: #0B3157;
+    border-bottom: solid 2px #48C1C2;
+    width:20px;
+    text-align: center;
+}
+
+
+ .tail-datetime-calendar .has-events {
+      cursor: pointer;
+      justify-content: center;
+
+    }
